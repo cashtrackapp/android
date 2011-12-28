@@ -1,0 +1,69 @@
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/LoginScreen"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+
+	<LinearLayout
+  	  android:id="@+id/UserPasswordLayout"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical"
+      android:gravity="center">
+
+		<TextView
+      	  android:id="@+id/UsernameText"
+      	  android:layout_width="wrap_content"
+      	  android:layout_height="wrap_content"
+      	  android:text="Username:">
+    	</TextView>
+
+    	<EditText
+      	  android:id="@+id/UsernameInput"
+      	  android:layout_width="300sp"
+      	  android:layout_height="wrap_content"
+      	  android:inputType="textVisiblePassword"
+      	  android:autoText="false"
+      	  android:lines="1">
+    	</EditText>
+
+    	<TextView
+      	  android:id="@+id/PasswordText"
+      	  android:layout_width="wrap_content"
+      	  android:layout_height="wrap_content"
+      	  android:text="Password:">
+    	</TextView>
+
+    	<EditText
+      	  android:id="@+id/PasswordInput"
+      	  android:layout_width="300sp"
+      	  android:layout_height="wrap_content"
+      	  android:inputType="textPassword"
+      	  android:lines="1">
+    	</EditText>
+
+		<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal">
+		
+	    	<Button
+	      	  android:id="@+id/LoginButton"
+	      	  android:layout_width="130sp"
+	      	  android:layout_height="wrap_content"
+	      	  android:textSize="17sp"
+	      	  android:text="Sign in">
+	    	</Button>
+	    	<Button
+	      	  android:id="@+id/NewUser"
+	      	  android:layout_width="130sp"
+	      	  android:layout_height="wrap_content"
+	      	  android:textSize="17sp"
+	      	  android:text="New User">
+	    	</Button>
+    	</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>

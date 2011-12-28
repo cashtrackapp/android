@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+  android:versionCode="1"
+  android:versionName="1.1" xmlns:android="http://schemas.android.com/apk/res/android" package="com.CashTrack">
+      
+    <application
+      android:icon="@drawable/cashtrack"
+      android:label="@string/app_name"
+      android:theme="@style/ourTheme"
+      android:debuggable="true" android:name=".CustomComponents.BillServer">
+      
+		<activity
+		  android:name=".Activities.Login"
+          android:label="@string/app_name">
+          
+        	<intent-filter>
+            	<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+          android:name=".Activities.Balance">
+        </activity>
+        
+        <activity
+          android:name=".Activities.NewBill">
+        </activity>
+        
+        <activity
+          android:name=".Activities.Friends">
+        </activity>
+        
+        <activity
+          android:name=".Activities.Settings">
+        </activity>
+       
+        <activity
+          android:name=".Activities.BillShare">
+        </activity>
+        
+        <activity
+          android:name=".Activities.FriendSearch">
+        </activity>
+        
+        <activity
+          android:name=".Activities.UserView">
+        </activity>
+        
+        <activity
+          android:name=".Activities.SearchResults">
+        </activity>
+        
+        <activity
+          android:name=".Activities.Notifications">
+        </activity>
+        
+	</application>
+	
+    <uses-sdk android:minSdkVersion="3"/>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+</manifest>

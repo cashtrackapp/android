@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="categories">
+	<item>Other</item>
+	<item>Rent</item>
+	<item>Bar Tab</item>
+	<item>Restaurant</item>
+	<item>Cable</item>
+	<item>Electricity</item>
+	<item>Water</item>
+	<item>Loan</item>
+	<item>Travel Expense</item>
+	<item>Event</item>
+	<item>Shopping</item>
+	</string-array>
+<string-array name="search_by">
+<item>e-mail</item>
+<item>phone number</item>
+<item>name</item>
+<item>username</item>
+<item>all</item>
+</string-array>
+
+</resources>

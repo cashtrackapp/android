@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/MessageDetails"
+  android:layout_height="wrap_content"
+  android:layout_width="fill_parent"
+  android:orientation="vertical">
+
+<ScrollView
+    android:layout_height="0px"
+    android:layout_width="fill_parent"
+    android:layout_weight="90">
+
+<LinearLayout
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  
+  	<LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:paddingBottom="10sp"
+  	  android:orientation="vertical">
+
+		<TextView
+	  	  android:layout_width="wrap_content"
+	  	  android:layout_height="wrap_content"
+	  	  android:text="From: "
+	  	  style="@style/messageDetailsStatic">
+		</TextView>
+		
+		<View
+ 	  	  android:layout_width="fill_parent"
+ 	  	  android:layout_height="1sp"
+ 	  	  android:background="@android:color/darker_gray">
+ 		</View>
+		
+		<TextView
+		  android:id="@+id/MessageDetailFrom"
+	  	  android:layout_width="wrap_content"
+	  	  android:layout_height="wrap_content"
+	  	  style="@style/messageDetails">
+		</TextView>
+	
+	</LinearLayout>
+	
+	<LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:paddingBottom="10sp"
+  	  android:orientation="vertical">
+
+		<TextView
+	  	  android:layout_width="wrap_content"
+	  	  android:layout_height="wrap_content"
+	  	  android:text="Created on: "
+	  	  style="@style/messageDetailsStatic">
+		</TextView>
+		
+		<View
+ 	  	  android:layout_width="fill_parent"
+ 	  	  android:layout_height="1sp"
+ 	  	  android:background="@android:color/darker_gray">
+ 		</View>
+		
+		<TextView
+		  android:id="@+id/MessageDetailCreated"
+	  	  android:layout_width="wrap_content"
+	  	  android:layout_height="wrap_content"
+	  	  style="@style/messageDetails">
+		</TextView>
+	
+	</LinearLayout>
+	
+	<LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:paddingBottom="10sp"
+  	  android:orientation="vertical">
+
+		<TextView
+	  	  android:layout_width="wrap_content"
+	  	  android:layout_height="wrap_content"
+	  	  android:text="Expires on: "
+	  	  style="@style/messageDetailsStatic">
+		</TextView>
+		
+		<View
+ 	  	  android:layout_width="fill_parent"
+ 	  	  android:layout_height="1sp"
+ 	  	  android:background="@android:color/darker_gray">
+ 		</View>
+		
+		<TextView
+		  android:id="@+id/MessageDetailExpires"
+	  	  android:layout_width="wrap_content"
+	  	  android:layout_height="wrap_content"
+	  	  style="@style/messageDetails">
+		</TextView>
+	
+	</LinearLayout>
+	
+	<LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:paddingBottom="10sp"
+  	  android:orientation="vertical">
+
+		<TextView
+	  	  android:layout_width="wrap_content"
+	  	  android:layout_height="wrap_content"
+	  	  android:text="Subject: "
+	  	  style="@style/messageDetailsStatic">
+		</TextView>
+		
+		<View
+ 	  	  android:layout_width="fill_parent"
+ 	  	  android:layout_height="1sp"
+ 	  	  android:background="@android:color/darker_gray">
+ 		</View>
+		
+		<TextView
+		  android:id="@+id/MessageDetailSubject"
+	  	  android:layout_width="wrap_content"
+	  	  android:layout_height="wrap_content"
+	  	  style="@style/messageDetails">
+		</TextView>
+	
+	</LinearLayout>
+	
+	<LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:paddingBottom="10sp"
+  	  android:orientation="vertical">
+
+		<TextView
+	  	  android:layout_width="wrap_content"
+	  	  android:layout_height="wrap_content"
+	  	  android:text="Body: "
+	  	  style="@style/messageDetailsStatic">
+		</TextView>
+		
+		<View
+ 	  	  android:layout_width="fill_parent"
+ 	  	  android:layout_height="1sp"
+ 	  	  android:background="@android:color/darker_gray">
+ 		</View>
+		
+		<TextView
+		  android:id="@+id/MessageDetailBody"
+	  	  android:layout_width="wrap_content"
+	  	  android:layout_height="wrap_content"
+	  	  style="@style/messageDetails">
+		</TextView>
+	
+	</LinearLayout>
+		
+</LinearLayout>
+
+</ScrollView>
+
+<LinearLayout
+  android:id="@+id/MessageButtons"
+  android:layout_width="fill_parent"
+  android:layout_height="0px"
+  android:layout_weight="10"
+  android:padding="5sp"
+  android:background="@color/darker_gray"
+  android:orientation="horizontal">
+	
+	<Button
+	  android:id="@+id/MessageConfirmButton"
+	  android:layout_width="0px"
+	  android:layout_height="wrap_content"
+	  android:layout_weight="33"
+	  android:visibility="invisible"
+	  android:text="Confirm">
+	</Button>
+		
+	<Button
+	  android:id="@+id/MessageRejectButton"
+	  android:layout_width="0px"
+	  android:layout_height="wrap_content"
+	  android:layout_weight="33"
+	  android:visibility="invisible"
+	  android:text="Reject">
+	</Button>
+	
+	<Button
+	  android:id="@+id/MessageDetailDone"
+	  android:layout_width="0px"
+	  android:layout_height="wrap_content"
+	  android:layout_weight="33"
+	  android:text="Done">
+	</Button>
+	
+</LinearLayout>
+
+</LinearLayout>

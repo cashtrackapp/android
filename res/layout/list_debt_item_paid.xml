@@ -1,0 +1,74 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/Debt_List_Item_Paid"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/debt_item_paid"
+  android:minHeight="?android:attr/listPreferredItemHeight"
+  android:orientation="horizontal">
+	
+	<TextView
+	  android:id="@+id/Debt_Name_Paid"
+	  android:layout_width="0px" 
+	  android:layout_height="wrap_content"
+	  android:layout_gravity="center_vertical"
+	  android:layout_weight="40"
+	  android:paddingRight="7sp"
+	  android:textSize="17sp">
+	</TextView>
+	
+	<RelativeLayout
+	  android:layout_height="wrap_content"
+	  android:layout_width="0px"
+	  android:layout_gravity="center_vertical"
+	  android:layout_weight="35">
+
+	<TextView
+	  android:id="@+id/Debt_Date_Paid"
+	  android:layout_width="wrap_content" 
+	  android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+	  android:textSize="15sp">
+	</TextView>
+	  		  		
+	<TextView
+	  android:id="@+id/Debt_Tag_Paid"
+	  android:layout_width="wrap_content" 
+	  android:layout_height="wrap_content"
+	  android:layout_alignLeft="@id/Debt_Date_Paid"
+	  android:layout_below="@id/Debt_Date_Paid"
+	  android:layout_alignParentLeft="true"
+	  android:textSize="15sp">
+	</TextView>
+	
+	</RelativeLayout>
+	
+	<RelativeLayout
+	  android:layout_width="0px"
+	  android:layout_height="wrap_content"
+	  android:layout_gravity="center_vertical"
+	  android:layout_weight="25"
+	  android:paddingRight="10sp"
+	  android:orientation="horizontal">
+	
+	<TextView
+	  android:id="@+id/Debt_Amount_Pos_Paid"
+	  android:layout_width="wrap_content" 
+	  android:layout_height="wrap_content"
+	  android:layout_alignParentRight="true"
+	  android:textColor="@color/lime_green"
+	  android:textSize="17sp">
+	</TextView>
+	
+	<TextView
+	  android:id="@+id/Debt_Amount_Neg_Paid"
+	  android:layout_width="wrap_content" 
+	  android:layout_height="wrap_content"
+	  android:layout_alignParentRight="true"
+	  android:textColor="@color/solid_red"
+	  android:textSize="17sp">
+	</TextView>
+	
+	</RelativeLayout>
+	  	  	
+</LinearLayout>

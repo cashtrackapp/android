@@ -1,0 +1,10 @@
+<resources>
+
+    <color name="solid_red">#f00</color>
+    <color name="solid_blue">#0000ff</color>
+    <color name="solid_green">#f0f0</color>
+    <color name="lime_green">#00FF00</color>
+    <color name="gray">#313B38</color>
+    <color name="darker_gray">#757575</color>
+
+</resources>

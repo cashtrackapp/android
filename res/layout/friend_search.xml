@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+android:gravity="center_horizontal">
+
+    	<TextView
+      	  android:layout_width="wrap_content"
+      	  android:layout_height="50dp"
+      	  android:gravity="center"
+      	  android:textSize="25sp"
+      	  android:text="Search Existing Users By:">
+    	</TextView>
+    	
+    	<Spinner
+    	android:id="@+id/searchby_spinner"
+    	android:layout_width="200dp"
+    	android:layout_height="wrap_content"
+    	android:entries="@array/search_by">
+    	</Spinner>
+
+    	<EditText
+      	  android:id="@+id/search_input"
+      	  android:layout_width="fill_parent"
+      	  android:layout_height="wrap_content"
+      	  android:singleLine="true"
+      	  android:maxLength="50"
+      	  android:lines="1"
+      	  android:inputType="text"
+      	  android:imeOptions="actionSearch"
+      	  android:imeActionLabel="">
+    	</EditText>
+
+    	<Button
+    	 
+      	  android:id="@+id/SearchButton"
+      	  android:layout_width="200dp"
+      	  android:layout_height="wrap_content"
+      	  android:textSize="17sp"
+      	  android:text="Search Users">
+    	</Button> 
+    	
+    	<TextView
+      	  android:layout_width="wrap_content"
+      	  android:layout_height="40dp"
+      	  android:gravity="center"
+      	  android:textSize="25sp"
+      	  android:text="Or Create Local User:">
+    	</TextView>
+		
+		<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+			<TextView
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:text="First Name:">
+			</TextView>
+			
+			<EditText
+			  android:id="@+id/local_fname"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content">
+			</EditText>
+		</LinearLayout>
+			
+		<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+			
+			<TextView
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:text="Last Name:">
+			</TextView>
+			
+			<EditText
+			  android:id="@+id/local_lname"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content">
+			</EditText>
+		</LinearLayout>
+		
+		<Button
+		android:id="@+id/local_user_button"
+		android:layout_width="120dp"
+      	android:layout_height="wrap_content"
+      	android:textSize="17sp"
+      	android:text="Create">
+		</Button>
+		
+</LinearLayout>
+
+</ScrollView>
+

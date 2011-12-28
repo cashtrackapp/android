@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/NewMessagePopup"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="To:">
+  </TextView>
+  
+  <Button
+    android:id="@+id/NewMessageTo"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Choose friends">
+  </Button>
+  
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Subject:">
+  </TextView>
+  
+  <EditText
+    android:id="@+id/NewMessageSubject"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+  </EditText>
+  
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Body:">
+  </TextView>
+  
+  <EditText
+    android:id="@+id/NewMessageBody"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:lines="2">
+  </EditText>
+  
+  <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+  		<Button
+    	  android:id="@+id/NewMessageButton"
+    	  android:layout_width="0px"
+    	  android:layout_height="wrap_content"
+    	  android:layout_weight="50"
+    	  android:text="Submit">
+  		</Button>
+  		
+  		<Button
+    	  android:id="@+id/CancelMessageButton"
+    	  android:layout_width="0px"
+    	  android:layout_height="wrap_content"
+    	  android:layout_weight="50"
+    	  android:text="Cancel">
+  		</Button>
+  
+  </LinearLayout>
+
+</LinearLayout>

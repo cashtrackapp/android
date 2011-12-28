@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:paddingTop="10sp"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:orientation="vertical"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent">
+	  
+	  	<TextView
+	  	  android:id="@+id/user_details_heading"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:layout_gravity="center_horizontal"
+		  android:textSize="25sp"
+		  android:typeface="sans"
+		  android:text="New User Login"
+		  android:paddingBottom="10sp">
+		</TextView>
+	  
+	  <LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<TextView
+			  android:layout_width="80sp"
+			  android:layout_height="wrap_content"
+			  android:text="Username:">
+			</TextView>
+			
+			<EditText
+			  android:id="@+id/username"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:editable="false">
+			</EditText>
+		</LinearLayout>
+		
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<TextView
+			  android:id="@+id/passwordText"
+			  android:layout_width="80sp"
+			  android:layout_height="wrap_content"
+			  android:text="Password:">
+			</TextView>
+			
+			<EditText
+			  android:id="@+id/password"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:editable="false">
+			</EditText>
+		</LinearLayout>
+		
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<TextView
+			  android:id="@+id/newPasswordText"
+			  android:layout_width="80sp"
+			  android:layout_height="wrap_content"
+			  android:text=" New Password:">
+			</TextView>
+			
+			<EditText
+			  android:id="@+id/newPassword"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:inputType="textVisiblePassword">
+			</EditText>
+			
+		</LinearLayout>
+	  
+	  <LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<TextView
+			  android:layout_width="80sp"
+			  android:layout_height="wrap_content"
+			  android:text="First Name:">
+			</TextView>
+			
+			<EditText
+			  android:id="@+id/fname"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:editable="false">
+			</EditText>
+		</LinearLayout>
+		
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<TextView
+			  android:layout_width="80sp"
+			  android:layout_height="wrap_content"
+			  android:text="Last Name:">
+			</TextView>
+			
+			<EditText
+			  android:id="@+id/lname"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:editable="false">
+			</EditText>
+		</LinearLayout>
+		
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<TextView
+			  android:layout_width="80sp"
+			  android:layout_height="wrap_content"
+			  android:text="e-mail:">
+			</TextView>
+			
+			<EditText
+			  android:id="@+id/email"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:editable="false">
+			</EditText>
+		</LinearLayout>
+		
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<TextView
+			  android:layout_width="80sp"
+			  android:layout_height="wrap_content"
+			  android:text="Phone #:">
+			</TextView>
+			
+			<EditText
+			  android:id="@+id/phone"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:editable="false">
+			</EditText>
+		</LinearLayout>
+		
+		<Button
+			android:id="@+id/loginButton"
+			android:layout_width ="130sp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:text="Login">
+		</Button>
+	  
+	</LinearLayout>
+</ScrollView>

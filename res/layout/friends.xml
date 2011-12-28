@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+
+	<RelativeLayout
+	  android:id="@+id/FriendHeader"
+	  android:layout_height="wrap_content"
+	  android:layout_width="fill_parent"
+	  android:paddingTop="7sp">
+
+		<Button
+		  android:text="Add Friend"
+		  android:id="@+id/NewButton"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content">
+		</Button>
+		
+		<ListView
+		  android:id="@+id/FriendsList"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/NewButton">
+		</ListView>
+		
+	</RelativeLayout>
+	
+</RelativeLayout>

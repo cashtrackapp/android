@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:paddingTop="10sp"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <LinearLayout
+  android:orientation ="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		
+	<Button
+	  android:id="@+id/Swap_Button"
+	  android:layout_gravity="center_vertical"
+	  android:layout_height="wrap_content"
+	  android:layout_width="80sp">
+	</Button>
+
+	<TextView
+	  android:id="@+id/Friend"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:gravity="center"
+	  android:textSize="23sp">
+	</TextView>
+	
+	</LinearLayout>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		
+		<TextView
+		  android:id="@+id/Tag"
+		  android:layout_width="80sp"
+		  android:layout_height="wrap_content"
+		  android:layout_gravity="center_vertical"
+		  android:text="For:">
+		</TextView>
+		
+		<Spinner
+		  android:id="@+id/Tag_Input"
+		  android:prompt="@string/category_prompt"
+		  android:layout_width="fill_parent"
+		  android:layout_height="40dp">
+		</Spinner>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		
+		<TextView
+		  android:id="@+id/Amount"
+		  android:layout_width="80sp"
+		  android:layout_height="wrap_content"
+		  android:text="Amount:">
+		</TextView>
+		
+		<EditText
+		  android:id="@+id/Amount_Input"
+		  android:layout_width="fill_parent"
+		  android:layout_height="40dp"
+		  android:textSize="16sp"
+		  android:inputType="numberDecimal" 
+		  android:imeOptions="actionDone">
+		</EditText>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	
+		<TextView
+		  android:id="@+id/DateString"
+		  android:layout_width="80sp"
+		  android:layout_height="wrap_content"
+		  android:text="Date:">
+		</TextView>
+		
+		<EditText
+		  android:id="@+id/Date_Display"
+		  android:layout_width="fill_parent"
+		  android:layout_height="40dp"
+		  android:editable="false"
+		  android:textSize="16sp"
+		  android:cursorVisible="false">
+		</EditText>
+	</LinearLayout>
+		
+	<LinearLayout
+		android:orientation="horizontal"
+ 		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+			
+		<TextView
+		  android:id="@+id/DueString"
+		  android:layout_width="80sp"
+		  android:layout_height="wrap_content"
+		  android:text="Due Date:">
+		</TextView>
+	
+		<EditText
+		  android:id="@+id/Due_Date_Display"
+		  android:layout_width="fill_parent"
+		  android:layout_height="40dp"
+		  android:textSize="16sp"
+	  	  android:editable="false"
+	  	  android:cursorVisible="false">
+		</EditText>
+	
+	</LinearLayout>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		
+		<TextView
+		  android:id="@+id/Details"
+		  android:layout_width="80sp"
+		  android:layout_height="wrap_content"
+		  android:text="Details:">
+		</TextView>
+		
+		<EditText
+		  android:id="@+id/Details_Input"
+		  android:layout_width="fill_parent"
+		  android:layout_height="40dp"
+		  android:inputType="text"
+		  android:textSize="16sp"
+		  android:imeOptions="actionDone">
+		</EditText>
+		
+	</LinearLayout>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+ 		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+			
+			<RadioButton
+			  	android:id="@+id/Edit_Button"
+			  	android:layout_width="wrap_content"
+			  	android:layout_height="wrap_content"
+			  	android:text="Editing Existing"
+			  	android:clickable="false"
+			  	android:focusable="false"
+			  	android:focusableInTouchMode="false"
+			  	android:layout_weight="1">
+			</RadioButton>
+			
+			<CheckBox
+			  	android:id="@+id/Paid_Button"
+			  	android:layout_width="wrap_content"
+			  	android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="Debt Paid?">
+			</CheckBox>
+			
+		</LinearLayout>
+  
+	  <LinearLayout
+		android:orientation="horizontal"
+ 		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		  	<Button
+			  	android:id="@+id/Save_Button"
+			  	android:layout_width="wrap_content"
+			  	android:layout_height="wrap_content"
+				android:layout_weight="1"
+			  	android:text="Save">
+			</Button>
+			
+			<Button
+			  	android:id="@+id/Reset_Button"
+			  	android:layout_width="wrap_content"
+			  	android:layout_height="wrap_content"
+			  	android:layout_weight="1"
+			  	android:text="Reset">
+			</Button>
+			
+		</LinearLayout>
+	</LinearLayout>
+	
+</ScrollView>
